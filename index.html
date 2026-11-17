@@ -196,17 +196,37 @@ h2 em{font-style:normal;color:var(--blood-hi)}
 .rp-j::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--blood-hi);animation:pul 2.2s infinite}
 .rp-grid{display:grid;gap:1.6rem;align-items:center}
 @media (min-width:860px){.rp-grid{grid-template-columns:1.05fr 1fr;gap:3rem}}
-.tk{width:min(100%,430px);margin:0 auto;filter:drop-shadow(0 30px 40px #000a);color:var(--ink)}
-.tk-a,.tk-b{background:var(--paper);padding:1.1rem 1.2rem;-webkit-mask:radial-gradient(circle 12px at 0 var(--y),#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 12px at 100% var(--y),#0000 98%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle 12px at 0 var(--y),#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 12px at 100% var(--y),#0000 98%,#000) right/51% 100% no-repeat}
-.tk-a{--y:100%;display:flex;gap:1rem;align-items:center;border-radius:16px 16px 0 0;padding-bottom:1.4rem}
-.tk-a img{width:clamp(84px,26vw,112px);aspect-ratio:1;object-fit:cover;border-radius:8px;flex:none}
-.tk small{display:block;font:600 .62rem var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--blood)}
-.tk strong{display:block;font:400 clamp(2rem,9vw,2.8rem)/1 var(--display);text-transform:uppercase;margin:.15rem 0 .4rem}
-.tk-a p{font:600 .68rem/1.5 var(--body);letter-spacing:.12em;text-transform:uppercase;color:#4b443c}
-.tk-b{--y:0;position:relative;display:grid;grid-template-columns:1fr auto;gap:.6rem 1rem;align-items:end;border-radius:0 0 16px 16px;padding-top:1.4rem;background-image:linear-gradient(90deg,#0b090833 50%,#0000 0);background-size:10px 1px;background-repeat:repeat-x;background-position:0 0;background-color:var(--paper)}
-.tk-b b{display:block;font:400 1.35rem/1.1 var(--display);letter-spacing:.05em;text-transform:uppercase;overflow-wrap:anywhere}
-.tk-b .cd{font:600 .95rem var(--body);letter-spacing:.14em;color:var(--blood)}
-.tk .bar{grid-column:1/-1;height:26px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,#0000 2px 4px,var(--ink) 4px 5px,#0000 5px 9px,var(--ink) 9px 12px,#0000 12px 14px)}
+.tk{width:min(100%,440px);margin:0 auto;filter:drop-shadow(0 30px 40px #000a);color:var(--ink)}
+.tk-a,.tk-b{background:var(--paper);padding:1.8rem;-webkit-mask:radial-gradient(circle 14px at 0 var(--y),#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 14px at 100% var(--y),#0000 98%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle 14px at 0 var(--y),#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 14px at 100% var(--y),#0000 98%,#000) right/51% 100% no-repeat}
+.tk-a{--y:100%;display:grid;gap:1.5rem;border-radius:20px 20px 0 0;padding-bottom:2.2rem}
+.tk-a img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.tk small{display:block;font:600 .68rem var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--blood)}
+.tk-t strong{display:block;font:400 clamp(2.6rem,12vw,3.6rem)/1 var(--display);text-transform:uppercase;margin:.5rem 0 0}
+.tk-i{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem 1rem;margin:0;padding-top:1.4rem;border-top:1px solid #0b090822}
+.tk-i div:last-child{grid-column:1/-1}
+.tk-i dt{font:600 .62rem var(--body);letter-spacing:.2em;text-transform:uppercase;color:#7b7368;margin-bottom:.3rem}
+.tk-i dd{margin:0;font:600 1rem/1.3 var(--body);color:var(--ink)}
+.tk-b{--y:0;display:grid;gap:1.4rem;border-radius:0 0 20px 20px;padding-top:2.2rem;background-image:linear-gradient(90deg,#0b090833 50%,#0000 0);background-size:10px 1px;background-repeat:repeat-x;background-position:0 0;background-color:var(--paper)}
+.tk-b b{display:block;font:400 clamp(1.9rem,8vw,2.5rem)/1.1 var(--display);letter-spacing:.04em;text-transform:uppercase;overflow-wrap:anywhere;margin-top:.4rem}
+.tk-b .cd{display:block;margin-top:.4rem;font:600 1.15rem var(--body);letter-spacing:.16em;color:var(--blood)}
+.tk-f{margin:0;font:400 .76rem/1.5 var(--body);color:#7b7368;padding-top:1.2rem;border-top:1px solid #0b090822}
+.rp-side{display:grid;gap:1.6rem}
+.how{display:grid;gap:1.1rem}
+.how h3{font:600 .78rem var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0}
+.how ol{list-style:none;padding:0;margin:0;display:grid;gap:1rem;counter-reset:s}
+.how li{display:grid;grid-template-columns:2.4rem 1fr;gap:.9rem;align-items:start}
+.how li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid #ffffff40;font:400 1.15rem var(--display);background:#0b090899}
+.how b{display:block;font:600 1rem var(--body)}
+.how span{display:block;color:var(--mute);font-size:.9rem;line-height:1.5}
+.how-n{margin:0;font-size:.82rem;color:var(--mute);border-left:2px solid var(--blood-hi);padding-left:.8rem}
+.rp-grid.done{grid-template-columns:1fr;justify-items:center;gap:2rem}
+.rp-act{width:min(100%,440px);display:grid;gap:1.1rem;text-align:center;justify-items:center}
+.rp-act p{margin:0;color:var(--paper)}
+.rp-act .ok-s{color:var(--mute);font-size:.88rem}
+.act-g{display:grid;gap:.7rem;width:100%}
+.act{display:block;width:100%;text-align:center;font:600 1rem var(--body);padding:.95rem 1.2rem;border-radius:.8rem;border:1px solid #ffffff33;background:#ffffff14;color:var(--paper);text-decoration:none;cursor:pointer}
+.act.pri{background:var(--blood);border-color:var(--blood)}
+.rp-grid [hidden]{display:none!important}
 .fm{display:grid;gap:1rem;padding:1.3rem;border-radius:18px;background:#0b0908d9;border:1px solid #ffffff22;backdrop-filter:blur(6px)}
 .fm label{display:grid;gap:.4rem;font:600 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 .fm input[type=text],.fm input[type=tel]{width:100%;font:400 1.05rem var(--body);color:var(--paper);background:var(--ink);border:1px solid #ffffff33;border-radius:.6rem;padding:.8rem .9rem}
@@ -284,12 +304,29 @@ h2 em{font-style:normal;color:var(--blood-hi)}
   <span class="rp-big" aria-hidden="true">PARIS</span>
   <div class="rp-in">
     <header class="rp-hd"><span class="kicker">Paris · France · 48°51′N 2°21′E</span><h2 id="insc-t">Release <em>party</em></h2><p class="rp-d">Sam. 28 nov. 2026 — Eureka — 19h / 21h</p><span class="rp-j" id="rp-j"></span></header>
-    <div class="rp-grid">
-      <article class="tk" aria-label="Pass release party">
-        <div class="tk-a"><img id="b-img" alt="Pochette de l’EP Forgiveness, portrait de Pson"><div><small>Pson · Release party</small><strong>Forgiveness</strong><p>Sam. 28 nov. 2026<br>Eureka · Paris, France<br>19h / 21h</p></div></div>
-        <div class="tk-b"><div><small>Nom</small><b id="b-nom">Ton nom</b></div><div><small>Code</small><span class="cd" id="b-code">PSON-····-····</span></div><i class="bar" aria-hidden="true"></i></div>
+    <div class="rp-grid" id="rp-grid">
+      <article class="tk" id="tk" aria-label="Billet release party">
+        <div class="tk-a">
+          <img id="b-img" alt="Pochette de l’EP Forgiveness, portrait de Pson">
+          <div class="tk-t"><small>Pson · Release party</small><strong>Forgiveness</strong></div>
+          <dl class="tk-i"><div><dt>Date</dt><dd>Sam. 28 nov. 2026</dd></div><div><dt>Horaire</dt><dd>19h / 21h</dd></div><div><dt>Lieu</dt><dd>Eureka · Paris, France</dd></div></dl>
+        </div>
+        <div class="tk-b">
+          <div><small>Invité·e</small><b id="b-nom">Ton nom</b></div>
+          <div><small>Code personnel</small><span class="cd" id="b-code">PSON-····-····</span></div>
+          <p class="tk-f">Billet nominatif, à présenter à l’entrée.</p>
+        </div>
       </article>
-      <div>
+      <div class="rp-side" id="rp-side">
+        <div class="how">
+          <h3>Comment ça fonctionne</h3>
+          <ol>
+            <li><div><b>Inscris-toi</b><span>Renseigne ton nom et ton numéro de téléphone. Cela prend moins d’une minute.</span></div></li>
+            <li><div><b>Reçois ton billet</b><span>Ton inscription est enregistrée et un code personnel est généré. Ton billet s’affiche aussitôt.</span></div></li>
+            <li><div><b>Présente-le à l’entrée</b><span>Montre ton billet depuis ton téléphone ou en capture d’écran. Il est nominatif.</span></div></li>
+          </ol>
+          <p class="how-n">Un seul billet par numéro. Déjà inscrit·e ? Saisis le même numéro pour retrouver ton billet.</p>
+        </div>
         <form class="fm" id="f" novalidate>
           <label>Nom<input type="text" name="nom" autocomplete="name" required maxlength="60"></label>
           <label>Numéro de téléphone<input type="tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="+33 6 12 34 56 78" required></label>
@@ -297,7 +334,16 @@ h2 em{font-style:normal;color:var(--blood-hi)}
           <button class="cta b2" type="submit" id="fb">Je m’inscris</button>
           <p class="fst" id="fst" role="status" aria-live="polite"></p>
         </form>
-        <div class="okb" id="pass" hidden><p>Ton pass est prêt. Garde ton code : il t’identifie à l’entrée.</p><div class="bda"><button class="cta b2" type="button" id="dl">Télécharger mon pass</button><button class="lk" type="button" id="nm">Ce n’est pas moi</button></div></div>
+      </div>
+      <div class="rp-act" id="pass" hidden>
+        <p>Ton inscription est confirmée. Garde ce billet sur ton téléphone : il t’identifie à l’entrée.</p>
+        <div class="act-g">
+          <a class="act pri" id="wl" hidden target="_blank" rel="noopener">Ajouter à Google Wallet</a>
+          <button class="act pri" type="button" id="dl">Télécharger mon billet</button>
+          <button class="act" type="button" id="sv" hidden>Partager / Enregistrer</button>
+          <button class="act" type="button" id="ics">Ajouter à l’agenda</button>
+        </div>
+        <p class="ok-s">Le billet est lié à ton numéro. Ce n’est pas toi ? <button class="lk" type="button" id="nm">Changer de personne</button></p>
       </div>
     </div>
   </div>
@@ -312,17 +358,12 @@ h2 em{font-style:normal;color:var(--blood-hi)}
 <section class="gal" id="galerie" aria-label="Galerie photos">
   <div class="gal-head"><p class="kicker">Pson · Galerie</p><h2>En <em>images</em></h2><p class="gal-sub">Touche une photo pour l’agrandir.</p><div class="tabs" id="tabs" role="group" aria-label="Choisir un album"><button type="button" data-a="all" aria-pressed="true">Tout</button><button type="button" data-a="shoot" aria-pressed="false">Shooting</button><button type="button" data-a="party" aria-pressed="false">Release party</button></div></div>
   <div class="mas" id="mas">
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 1"><img src="photos/01.jpg" loading="lazy" width="1400" height="936" alt="Pson devant un grand miroir ancien, pull bordeaux, rideaux orange" decoding="async"><span class="no">01</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 2"><img src="photos/02.jpg" loading="lazy" width="936" height="1400" alt="Pson assis sur un banc blanc dans un jardin fleuri, polo vert rayé, lunettes dorées" decoding="async"><span class="no">02</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 3"><img src="photos/03.jpg" loading="lazy" width="936" height="1400" alt="Gros plan de Pson, lunettes dorées et chaîne en or, la main sur un montant en bois" decoding="async"><span class="no">03</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 4"><img src="photos/04.jpg" loading="lazy" width="937" height="1400" alt="Pson au téléphone à cadran dans un escalier tapissé" decoding="async"><span class="no">04</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 5"><img src="photos/05.jpg" loading="lazy" width="1400" height="936" alt="Pson assis au centre d’un jardin en fleurs, vue large" decoding="async"><span class="no">05</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 6"><img src="photos/06.jpg" loading="lazy" width="936" height="1400" alt="Pson assis dans un escalier, le poing sous le menton, mocassins bordeaux" decoding="async"><span class="no">06</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 7"><img src="photos/07.jpg" loading="lazy" width="936" height="1400" alt="Portrait de Pson en contre-plongée devant un palmier" decoding="async"><span class="no">07</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 8"><img src="photos/08.jpg" loading="lazy" width="936" height="1400" alt="Pson assis sur un banc blanc, jambes croisées, bras écartés" decoding="async"><span class="no">08</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 9"><img src="photos/09.jpg" loading="lazy" width="936" height="1400" alt="Pson de profil, casquette bleue, devant un mur de briques" decoding="async"><span class="no">09</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 10"><img src="photos/10.jpg" loading="lazy" width="937" height="1400" alt="Pson en casquette bleue regardant son téléphone dans un jardin" decoding="async"><span class="no">10</span></button></figure>
-<figure class="ph"><button type="button" aria-label="Agrandir la photo 11"><img src="photos/11.jpg" loading="lazy" width="936" height="1400" alt="Pson adossé à un mur de briques, jean large et casquette bleue" decoding="async"><span class="no">11</span></button></figure>
+<figure class="ph"><button type="button" aria-label="Agrandir la photo 1"><img src="photos/rp-01.jpg" loading="lazy" width="1200" height="1500" alt="L’artiste au mégaphone, débardeur noir et lunettes, devant une échelle en bois" decoding="async"><span class="no">01</span></button></figure>
+<figure class="ph"><button type="button" aria-label="Agrandir la photo 2"><img src="photos/rp-02.jpg" loading="lazy" width="1200" height="1500" alt="L’artiste assis, micro à la main, penché sur son téléphone avec un proche, mégaphone au premier plan" decoding="async"><span class="no">02</span></button></figure>
+<figure class="ph"><button type="button" aria-label="Agrandir la photo 3"><img src="photos/rp-03.jpg" loading="lazy" width="1200" height="1500" alt="L’artiste en mouvement devant le public, un DJ au sol et des invités qui filment" decoding="async"><span class="no">03</span></button></figure>
+<figure class="ph"><button type="button" aria-label="Agrandir la photo 4"><img src="photos/rp-04.jpg" loading="lazy" width="1200" height="1500" alt="Photo de groupe devant l’écran LED, poses et sourires" decoding="async"><span class="no">04</span></button></figure>
+<figure class="ph"><button type="button" aria-label="Agrandir la photo 5"><img src="photos/rp-05.jpg" loading="lazy" width="1200" height="1500" alt="Photo de groupe devant l’écran LED, l’artiste en casquette verte au centre" decoding="async"><span class="no">05</span></button></figure>
+<figure class="ph"><button type="button" aria-label="Agrandir la photo 6"><img src="photos/rp-06.jpg" loading="lazy" width="1200" height="1500" alt="L’artiste au micro, vu d’en haut, face au public" decoding="async"><span class="no">06</span></button></figure>
   </div>
 </section>
 
@@ -350,7 +391,7 @@ const CLIP_URL = "https://share.google/hlJlzlMa4bThGRuj0";
 const SOCIALS = { Instagram: "", TikTok: "", YouTube: "" };   // les liens vides ne s’affichent pas
 const CONTACT_WA = "";    // ex. "243XXXXXXXXX"
 const TITRES = ["Forgiveness", "Kimia", "Spirits", "Kumbele", "Madame", "Bébé", "Dady", "Illégale", "Chofa", "My Woman"];
-const INSCRIPTION_URL = "";   // adresse qui reçoit {nom, numero, code, date} (ex. Google Apps Script) — VIDE = rien n’est enregistré
+const INSCRIPTION_URL = "";   // COLLE ICI l’adresse du Web App Google Apps Script (finit par /exec). VIDE = rien n’est enregistré dans le Google Sheets
 const PARTY = [];             // photos de la release party, dans le dossier photos/party/ — ex. ["01.jpg", "02.jpg"]
 /* ===================== */
 const $ = id => document.getElementById(id);
@@ -465,17 +506,24 @@ if (!reduce) {
 // Logos de la barre et du pied de page : même image que l’accueil
 document.querySelectorAll('img[data-logo]').forEach(i => { i.src = $('logo').src; });
 
-// Release party Paris : nom + numéro → code → pass
+// Release party Paris : nom + numéro → enregistrement (Google Sheets) → billet
 {
-  const f = $('f'), st = $('fst'), btn = $('fb'), pass = $('pass'), KEY = 'pson-rp-paris', cover = $('card').querySelector('img');
+  const f = $('f'), st = $('fst'), btn = $('fb'), grid = $('rp-grid'), pass = $('pass'), KEY = 'pson-rp-paris', cover = $('card').querySelector('img');
   const T = new Date('2026-11-28T19:00:00+01:00'), END = T.getTime() + 8 * 36e5, d = Math.ceil((T - Date.now()) / 864e5), over = Date.now() > END;
   $('rp-j').textContent = over ? 'Terminée' : d > 1 ? 'J-' + d : d === 1 ? 'Demain' : 'Ce soir';
   $('b-img').src = cover.src;
   let me = null; try { me = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
   const gen = () => { const a = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789', s = [...crypto.getRandomValues(new Uint8Array(8))].map(v => a[v % a.length]).join(''); return 'PSON-' + s.slice(0, 4) + '-' + s.slice(4); };
-  const render = p => { me = p; $('b-nom').textContent = p.nom; $('b-code').textContent = p.code; $('insc-t').innerHTML = 'Tu es <em>inscrit·e</em>'; f.hidden = true; pass.hidden = false; };
+  // Une fois inscrit·e : le formulaire disparaît, le billet prend la place avec ses actions
+  const render = (p, anim) => {
+    me = p; $('b-nom').textContent = p.nom; $('b-code').textContent = p.code;
+    $('insc-t').innerHTML = 'Ton billet est <em>prêt</em>';
+    grid.classList.add('done'); $('rp-side').hidden = true; pass.hidden = false;
+    if (p.wallet) { $('wl').href = p.wallet; $('wl').hidden = false; }
+    if (anim) setTimeout(() => $('tk').scrollIntoView({ behavior: 'smooth', block: 'center' }), 150);
+  };
   const err = (m, el) => { st.textContent = m; el && el.focus(); };
-  if (me && me.code) render(me); else if (over) { f.hidden = true; $('insc-t').innerHTML = 'À la <em>prochaine</em>'; }
+  if (me && me.code) render(me); else if (over) { $('rp-side').hidden = true; $('insc-t').innerHTML = 'À la <em>prochaine</em>'; }
   f.addEventListener('submit', async e => {
     e.preventDefault(); st.textContent = '';
     const nom = f.nom.value.trim().replace(/\s+/g, ' '), tel = f.tel.value.replace(/[\s.\-()]/g, '');
@@ -485,30 +533,58 @@ document.querySelectorAll('img[data-logo]').forEach(i => { i.src = $('logo').src
     const p = { evenement: 'release-party-paris-2026-11-28', nom, numero: tel, code: gen(), date: new Date().toISOString() };
     btn.disabled = true; st.textContent = 'Envoi…';
     try {
-      if (INSCRIPTION_URL) { const r = await fetch(INSCRIPTION_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(p) }); if (!r.ok) throw new Error(r.status); }
-      else console.warn('INSCRIPTION_URL est vide : les inscriptions ne sont pas enregistrées.');
+      if (INSCRIPTION_URL) {
+        const r = await fetch(INSCRIPTION_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(p) });
+        if (!r.ok) throw new Error(r.status);
+        const j = await r.json().catch(() => null);
+        if (j && j.ok === false) throw new Error('refus');
+        if (j && j.code) p.code = j.code;        // numéro déjà inscrit : on retrouve son code
+        if (j && j.wallet) p.wallet = j.wallet;  // lien Google Wallet (facultatif)
+      } else console.warn('INSCRIPTION_URL est vide : les inscriptions ne sont pas enregistrées.');
       try { localStorage.setItem(KEY, JSON.stringify(p)); } catch (x) {}
-      st.textContent = ''; render(p);
-    } catch (x) { err('Envoi impossible. Vérifie ta connexion puis réessaie.'); }
+      st.textContent = ''; render(p, true);
+    } catch (x) { err('Inscription non enregistrée. Vérifie ta connexion puis réessaie.'); }
     btn.disabled = false;
   });
   $('nm').onclick = () => { try { localStorage.removeItem(KEY); } catch (e) {} location.reload(); };
-  $('dl').onclick = async () => {
-    try { await document.fonts.load('80px Anton'); } catch (e) {}
-    const c = document.createElement('canvas'); c.width = 1080; c.height = 1500; const x = c.getContext('2d'), T = (t, y, font, col, ls, mw) => { x.font = font; x.fillStyle = col; x.letterSpacing = ls; x.fillText(t, 540, y, mw); };
-    x.fillStyle = '#0b0908'; x.fillRect(0, 0, 1080, 1500);
-    const g = x.createRadialGradient(540, 1500, 50, 540, 1500, 1100); g.addColorStop(0, '#a3171b'); g.addColorStop(.5, '#4a0a0d'); g.addColorStop(1, '#0b090800'); x.fillStyle = g; x.fillRect(0, 0, 1080, 1500);
-    x.fillStyle = '#efe9df'; x.beginPath(); x.roundRect(80, 80, 920, 1340, 36); x.fill();
-    x.save(); x.beginPath(); x.roundRect(120, 120, 840, 840, 20); x.clip(); x.drawImage(cover, 120, 120, 840, 840); x.restore();
-    x.textAlign = 'center';
-    T('PSON · RELEASE PARTY', 1030, '600 30px Barlow, sans-serif', '#a3171b', '8px');
-    T('FORGIVENESS', 1130, '400 130px Anton, Impact, sans-serif', '#0b0908', '3px', 840);
-    T('SAM. 28 NOV. 2026 — EUREKA — 19H / 21H', 1190, '600 28px Barlow, sans-serif', '#4b443c', '4px', 840);
-    T('PARIS · FRANCE', 1232, '600 24px Barlow, sans-serif', '#4b443c', '6px');
-    x.fillStyle = '#0b090833'; for (let i = 120; i < 960; i += 20) x.fillRect(i, 1262, 10, 3);
-    T(me.nom.toUpperCase().slice(0, 24), 1338, '400 64px Anton, Impact, sans-serif', '#0b0908', '3px', 840);
-    T(me.code, 1394, '600 36px Barlow, sans-serif', '#a3171b', '8px');
-    c.toBlob(b => { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'pass-release-party-pson.png'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 5000); });
+
+  // Billet en image (1080 × 1960)
+  const ticket = async () => {
+    try { await Promise.all([document.fonts.load('80px Anton'), document.fonts.load('600 30px Barlow')]); } catch (e) {}
+    const c = document.createElement('canvas'); c.width = 1080; c.height = 1960; const x = c.getContext('2d');
+    const T = (t, px, y, font, col, ls, mw) => { x.font = font; x.fillStyle = col; x.letterSpacing = ls || '0px'; x.fillText(t, px, y, mw); };
+    x.fillStyle = '#0b0908'; x.fillRect(0, 0, 1080, 1960);
+    const g = x.createRadialGradient(540, 1960, 50, 540, 1960, 1250); g.addColorStop(0, '#a3171b'); g.addColorStop(.5, '#4a0a0d'); g.addColorStop(1, '#0b090800'); x.fillStyle = g; x.fillRect(0, 0, 1080, 1960);
+    x.fillStyle = '#efe9df'; x.beginPath(); x.roundRect(80, 80, 920, 1800, 40); x.fill();
+    x.save(); x.beginPath(); x.roundRect(140, 140, 800, 800, 24); x.clip(); x.drawImage(cover, 140, 140, 800, 800); x.restore();
+    x.textAlign = 'left';
+    T('PSON · RELEASE PARTY', 140, 1010, '600 28px Barlow, sans-serif', '#a3171b', '8px');
+    T('FORGIVENESS', 140, 1165, '400 150px Anton, Impact, sans-serif', '#0b0908', '3px', 800);
+    x.fillStyle = '#0b090822'; x.fillRect(140, 1215, 800, 2);
+    const L = (t, px, y) => T(t, px, y, '600 22px Barlow, sans-serif', '#7b7368', '6px'), V = (t, px, y) => T(t, px, y, '600 36px Barlow, sans-serif', '#0b0908', '2px', 800 - (px - 140));
+    L('DATE', 140, 1277); V('SAM. 28 NOV. 2026', 140, 1329); L('HORAIRE', 660, 1277); V('19H / 21H', 660, 1329);
+    L('LIEU', 140, 1399); V('EUREKA · PARIS, FRANCE', 140, 1451);
+    x.fillStyle = '#0b090833'; for (let i = 140; i < 940; i += 20) x.fillRect(i, 1527, 10, 3);
+    L('INVITÉ·E', 140, 1601); T(me.nom.toUpperCase().slice(0, 28), 140, 1687, '400 88px Anton, Impact, sans-serif', '#0b0908', '3px', 800);
+    T(me.code, 140, 1757, '600 44px Barlow, sans-serif', '#a3171b', '10px', 800);
+    x.fillStyle = '#0b090822'; x.fillRect(140, 1797, 800, 2);
+    T('Billet nominatif · à présenter à l’entrée', 140, 1833, '400 24px Barlow, sans-serif', '#7b7368', '1px', 800);
+    return c;
+  };
+  const blob = async () => { const c = await ticket(); return new Promise(r => c.toBlob(r, 'image/png')); };
+  const save = (b, name) => { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 5000); };
+  $('dl').onclick = async () => save(await blob(), 'billet-release-party-pson.png');
+  try { if (navigator.canShare && navigator.canShare({ files: [new File([], 'a.png', { type: 'image/png' })] })) $('sv').hidden = false; } catch (e) {}
+  $('sv').onclick = async () => {
+    try { const b = await blob(); await navigator.share({ files: [new File([b], 'billet-release-party-pson.png', { type: 'image/png' })], title: 'Billet · Release party Pson' }); } catch (e) {}
+  };
+  // Agenda : l’événement avec rappel 3 h avant
+  $('ics').onclick = () => {
+    const z = s => s.replace(/[-:]/g, '').replace(/\.\d+/, '');
+    const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Pson//Release party//FR', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT', 'UID:' + me.code + '@psonzubaboy.com', 'DTSTAMP:' + z(new Date().toISOString()),
+      'DTSTART:20261128T180000Z', 'DTEND:20261128T200000Z', 'SUMMARY:Pson – Release party Forgiveness', 'LOCATION:Eureka\\, Paris\\, France',
+      'DESCRIPTION:Billet nominatif : ' + me.code + '\\nÀ présenter à l’entrée.', 'BEGIN:VALARM', 'TRIGGER:-PT3H', 'ACTION:DISPLAY', 'DESCRIPTION:Release party Pson ce soir', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'];
+    save(new Blob([L.join('\r\n')], { type: 'text/calendar;charset=utf-8' }), 'release-party-pson.ics');
   };
 }
 
